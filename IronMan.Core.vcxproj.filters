@@ -94,6 +94,7 @@
     <ClInclude Include="Core\Math\Math.h" />
     <ClInclude Include="Core\Math\Matrix.hpp" />
     <ClInclude Include="Core\Math\Vector.hpp" />
+    <ClInclude Include="Core\Offsets.hpp" />
     <ClInclude Include="Core\Menu.h" />
     <ClInclude Include="Core\MouseController\KMBOX\HidTable.h" />
     <ClInclude Include="Core\MouseController\KMBOX\KmboxB.h" />

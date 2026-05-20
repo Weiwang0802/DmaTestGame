@@ -1,0 +1,135 @@
+// --- 1. CORE ANTI-CHEAT ---
+constexpr uintptr_t XenuineDecrypt = 0x109A1328;
+constexpr uintptr_t UWorld = 0x12498C38;
+constexpr uintptr_t GNames = 0x1272C470;
+constexpr uintptr_t FNamePool = GNames;
+constexpr uintptr_t GObjects = 0x12459870;
+constexpr uintptr_t GNamesPtr = 0x10;
+constexpr uintptr_t ChunkSize = 0x3E4C;
+constexpr uintptr_t ObjID = 0x20;
+
+// --- 2. UNREAL ENGINE CORE ---
+constexpr uintptr_t PersistentLevel = 0x800;
+constexpr uintptr_t Actors = 0x38;
+constexpr uintptr_t ActorsForGC = 0x7D0;
+constexpr uintptr_t GameInstance = 0x3B0;
+constexpr uintptr_t GameState = 0x278;
+constexpr uintptr_t LocalPlayers = 0xF0;
+constexpr uintptr_t PlayerController = 0x38;
+constexpr uintptr_t AcknowledgedPawn = 0x4A8;
+constexpr uintptr_t PlayerCameraManager = 0x4D0;
+constexpr uintptr_t MyHUD = 0x4C8;
+constexpr uintptr_t PlayerState = 0x418;
+constexpr uintptr_t RootComponent = 0x308;
+constexpr uintptr_t ControlRotation = 0x40C;
+constexpr uintptr_t Character = 0x438;
+constexpr uintptr_t Pawn = 0x448;
+
+// --- 3. NAME DECRYPT PARAMS ---
+constexpr uintptr_t DecryptNameIndexRor = 0x1;
+constexpr uintptr_t DecryptNameIndexXorKey1 = 0x7360F24;
+constexpr uintptr_t DecryptNameIndexXorKey2 = 0xB621EC05;
+constexpr uintptr_t DecryptNameIndexXorKey3 = 0x1FF0000;
+constexpr uintptr_t DecryptNameIndexRval = 0x17;
+constexpr uintptr_t DecryptNameIndexSval = 0x7;
+constexpr uintptr_t DecryptNameIndexDval = 0x19;
+
+// --- 4. CAMERA & HUD ---
+constexpr uintptr_t ViewTarget = 0x1050;
+constexpr uintptr_t CamCacheLoc = 0xA30;
+constexpr uintptr_t CamCacheRot = 0xA10;
+constexpr uintptr_t CamCacheFOV = 0xA2C;
+constexpr uintptr_t SpectatorPawn = 0x760;
+constexpr uintptr_t DefaultFOV = 0x828;
+constexpr uintptr_t bShowMouseCursor = 0x658;
+constexpr uintptr_t BlockInputWidgetList = 0x5B0;
+constexpr uintptr_t WidgetStateMap = 0x538;
+constexpr uintptr_t Visibility = 0xA9;
+constexpr uintptr_t Minimap = 0x480;
+constexpr uintptr_t CurrentMinimapViewScale = 0x4A4;
+constexpr uintptr_t ScreenPosX = 0x4B8;
+constexpr uintptr_t ScreenPosY = 0x4BC;
+constexpr uintptr_t ScreenSize = 0x4A8;
+constexpr uintptr_t SelectMinimapSizeIndex = 0x5C8;
+constexpr uintptr_t Slot = 0x38;
+constexpr uintptr_t LayoutData = 0x40;
+constexpr uintptr_t Alignment = 0x20;
+
+// --- 5. CHARACTER & MESH ---
+constexpr uintptr_t Mesh = 0x4A0;
+constexpr uintptr_t Mesh3P = 0x800;
+constexpr uintptr_t ComponentLocation = 0x330;
+constexpr uintptr_t ComponentToWorld = 0x320;
+constexpr uintptr_t BoneArray = 0xAD8;
+constexpr uintptr_t StaticMesh = 0xAE8;
+constexpr uintptr_t BoneCount = 0xAF8;
+constexpr uintptr_t Eyes = 0x75C;
+constexpr uintptr_t WorldToMap = 0xA04;
+constexpr uintptr_t CharacterState = 0x1020;
+constexpr uintptr_t CharacterName = 0x1E00;
+constexpr uintptr_t CharacterMovement = 0x490;
+constexpr uintptr_t LastUpdateVelocity = 0x3E0;
+constexpr uintptr_t LastSubmitTime = 0x758;
+constexpr uintptr_t LastSubmitTimeOnScreen = 0x75C;
+constexpr uintptr_t LastRenderTime = 0x760;
+constexpr uintptr_t TeamNumber = 0x7C4;
+constexpr uintptr_t LastTeamNum = 0x2B18;
+constexpr uintptr_t SpectatedCount = 0x11BC;
+constexpr uintptr_t Gender = 0xB48;
+constexpr uintptr_t bAlwaysCreatePhysicsState = 0x488;
+
+// --- 6. WORLD & RADIUS ---
+constexpr uintptr_t FeatureRepObject = 0x460;
+constexpr uintptr_t SafetyZonePosition = 0xB0;
+constexpr uintptr_t SafetyZoneRadius = 0x114;
+constexpr uintptr_t BlueZoneRadius = 0x118;
+constexpr uintptr_t BlueZonePosition = 0xC0;
+constexpr uintptr_t NumAliveTeams = 0x480;
+
+// --- 7. HEALTH SYSTEM ---
+constexpr uintptr_t HeaFlag = 0x3B9;
+constexpr uintptr_t Health_Flag = HeaFlag;
+constexpr uintptr_t Health_Val1 = 0xA3C;
+constexpr uintptr_t Health_Raw = Health_Val1;
+constexpr uintptr_t Health_Val2 = 0xA38;
+constexpr uintptr_t Health_Val3 = 0xA24;
+constexpr uintptr_t Health_Val4 = 0xA10;
+constexpr uintptr_t Health_Val5 = 0xA25;
+constexpr uintptr_t Health_Val6 = 0xA20;
+constexpr uintptr_t GroggyHealth = 0x1530;
+
+static const uint32_t HealthXorKeys[16] = {
+0xCEC7A593, 0x9B63B2A7, 0xCAD3C3A5, 0xA738484B,
+0xCC911D0A, 0x23DDA185, 0x09454BC8, 0xA521BA21,
+0x0BA17A58, 0xB0EFA787, 0xE275B2BA, 0x878ADBD0,
+0xBDCC62D5, 0xA7934B07, 0x4B099E38, 0xEEDB2A7D
+};
+
+// --- 8. INVENTORY & STATS ---
+constexpr uintptr_t LocalPlayersStatic = 0x124192D0;
+constexpr uintptr_t PlayerArray = 0x410;
+constexpr uintptr_t AccountId = 0x810;
+constexpr uintptr_t PlayerNameStats = 0x420;
+constexpr uintptr_t PlayerStatusType = 0x468;
+constexpr uintptr_t SquadMemberIndex = 0xA1C;
+constexpr uintptr_t PlayerStatistics = 0xA10;
+constexpr uintptr_t DamageDealtOnEnemy = 0x804;
+constexpr uintptr_t ping = 0x3F8;
+constexpr uintptr_t MatchId = 0x518;
+constexpr uintptr_t PartnerLevel = 0x716;
+constexpr uintptr_t SurvivalTier = 0xCC8;
+constexpr uintptr_t SurvivalLevel = 0xCCC;
+constexpr uintptr_t PubgIdData = 0xCA0;
+constexpr uintptr_t CharacterClanInfo = 0x838;
+
+// --- 9. WEAPONS ---
+constexpr uintptr_t EquippedWeapons = 0x208;
+constexpr uintptr_t WeaponProcessor = 0x968;
+constexpr uintptr_t CurrentWeaponIndex = 0x319;
+constexpr uintptr_t WeaponTrajectoryData = 0x11A8;
+constexpr uintptr_t TrajectoryGravityZ = 0x106C;
+constexpr uintptr_t FiringAttachPoint = 0x8C0;
+constexpr uintptr_t ScopingAttachPoint = 0xB28;
+constexpr uintptr_t TrajectoryConfig = 0x108;
+
+constexpr uintptr_t SPOOFCALL_GADGET = 0x2423775;
