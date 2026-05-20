@@ -1,0 +1,30 @@
+# Build artifacts
+build/
+obj/
+bin/
+
+# Precompiled headers
+*.pch
+
+# Visual Studio user files
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.opendb
+*.db
+*.vcxproj.user
+
+# Cache
+*.cache
+CMakeFiles/
+
+# Output directories
+[Dd]ebug/
+[Rr]elease/
+[Rr]elease_*/
+[Mm]inSize[Rr]el/
+[Rr]elWith[Dd]ebInfo/
+
+# LFS temporary files
+*.lfs
