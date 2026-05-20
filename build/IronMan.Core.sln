@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{F0C46251-2603-3149-988D-B84F422EA0A4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A69B2F5-4850-398F-8072-DBF03A74AD13} = {4A69B2F5-4850-398F-8072-DBF03A74AD13}
+		{92F664BE-217C-33FC-A267-8E7704AC31E1} = {92F664BE-217C-33FC-A267-8E7704AC31E1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IronMan.Core-DMANo1", "IronMan.Core-DMANo1.vcxproj", "{4A69B2F5-4850-398F-8072-DBF03A74AD13}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92F664BE-217C-33FC-A267-8E7704AC31E1} = {92F664BE-217C-33FC-A267-8E7704AC31E1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{92F664BE-217C-33FC-A267-8E7704AC31E1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+		Release_Console|x64 = Release_Console|x64
+		Release_Debug|x64 = Release_Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0C46251-2603-3149-988D-B84F422EA0A4}.Release|x64.ActiveCfg = Release|x64
+		{F0C46251-2603-3149-988D-B84F422EA0A4}.Release_Console|x64.ActiveCfg = Release_Console|x64
+		{F0C46251-2603-3149-988D-B84F422EA0A4}.Release_Debug|x64.ActiveCfg = Release_Debug|x64
+		{4A69B2F5-4850-398F-8072-DBF03A74AD13}.Release|x64.ActiveCfg = Release|x64
+		{4A69B2F5-4850-398F-8072-DBF03A74AD13}.Release|x64.Build.0 = Release|x64
+		{4A69B2F5-4850-398F-8072-DBF03A74AD13}.Release_Console|x64.ActiveCfg = Release_Console|x64
+		{4A69B2F5-4850-398F-8072-DBF03A74AD13}.Release_Console|x64.Build.0 = Release_Console|x64
+		{4A69B2F5-4850-398F-8072-DBF03A74AD13}.Release_Debug|x64.ActiveCfg = Release_Debug|x64
+		{4A69B2F5-4850-398F-8072-DBF03A74AD13}.Release_Debug|x64.Build.0 = Release_Debug|x64
+		{92F664BE-217C-33FC-A267-8E7704AC31E1}.Release|x64.ActiveCfg = Release|x64
+		{92F664BE-217C-33FC-A267-8E7704AC31E1}.Release|x64.Build.0 = Release|x64
+		{92F664BE-217C-33FC-A267-8E7704AC31E1}.Release_Console|x64.ActiveCfg = Release_Console|x64
+		{92F664BE-217C-33FC-A267-8E7704AC31E1}.Release_Console|x64.Build.0 = Release_Console|x64
+		{92F664BE-217C-33FC-A267-8E7704AC31E1}.Release_Debug|x64.ActiveCfg = Release_Debug|x64
+		{92F664BE-217C-33FC-A267-8E7704AC31E1}.Release_Debug|x64.Build.0 = Release_Debug|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1684793E-05C3-3113-AF19-EE21E2E26483}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

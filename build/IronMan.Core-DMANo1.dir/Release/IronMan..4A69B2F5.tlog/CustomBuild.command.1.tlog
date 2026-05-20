@@ -1,0 +1,10 @@
+^D:\CHEAT\CODE\PUBG PAOD\PAOD-PUBG-DMA-SOURCE-CODE-MAIN\CMAKELISTS.TXT
+setlocal
+D:\Cheat\Code\lib\CMake\bin\cmake.exe "-SD:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main" "-BD:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build" --check-stamp-file "D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

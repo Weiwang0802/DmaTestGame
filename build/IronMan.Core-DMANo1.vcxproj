@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Console|x64">
+      <Configuration>Release_Console</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Debug|x64">
+      <Configuration>Release_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A69B2F5-4850-398F-8072-DBF03A74AD13}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>IronMan.Core-DMANo1</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IronMan.Core-DMANo1.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IronMan.Core-DMANo1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\bin\Release_Console\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">IronMan.Core-DMANo1.dir\Release_Console\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">IronMan.Core-DMANo1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\bin\Release_Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">IronMan.Core-DMANo1.dir\Release_Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">IronMan.Core-DMANo1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\OpenSSL-Win64\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PxShared\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\characterkinematic;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\common;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\cooking;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\extensions;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\foundation;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\geometry;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pxtask;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pvd;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\HttpLib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHca</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DisableSpecificWarnings>4307;4530</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/IronMan.Core-DMANo1.dir/Release//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;ZYCORE_STATIC_DEFINE;ZYDIS_STATIC_DEFINE;U_STATIC_IMPLEMENTATION;IRONMANCORE_EXPORTS;_USRDLL;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;ZYCORE_STATIC_DEFINE;ZYDIS_STATIC_DEFINE;U_STATIC_IMPLEMENTATION;IRONMANCORE_EXPORTS;_USRDLL;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\OpenSSL-Win64\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PxShared\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\characterkinematic;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\common;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\cooking;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\extensions;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\foundation;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\geometry;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pxtask;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pvd;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\HttpLib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\OpenSSL-Win64\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PxShared\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\characterkinematic;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\common;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\cooking;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\extensions;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\foundation;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\geometry;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pxtask;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pvd;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\HttpLib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Lib\vmm.lib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Lib\leechcore.lib;PhysX3_x64.lib;PhysX3Common_x64.lib;PhysX3Cooking_x64.lib;PhysX3Extensions.lib;PxFoundation_x64.lib;PxPvdSDK_x64.lib;PhysX3CharacterKinematic_x64.lib;PhysX3Vehicle.lib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\Zydis\lib\Zydis.lib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\Zycore\lib\Zycore.lib;libcrypto_static.lib;libssl_static.lib;OpenGL32.lib;Dbghelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zydis/lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zydis/lib/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zycore/lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zycore/lib/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Core/DMA/Lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Core/DMA/Lib/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/OpenSSL-Win64/lib/VC/x64/MT;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/OpenSSL-Win64/lib/VC/x64/MT/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/Lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /SETCHECKSUM</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <HeapCommitSize>COMMIT:16384</HeapCommitSize>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/Release/IronMan.Core-DMANo1.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/bin/Release/IronMan.Core-DMANo1.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\OpenSSL-Win64\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PxShared\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\characterkinematic;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\common;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\cooking;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\extensions;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\foundation;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\geometry;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pxtask;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pvd;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\HttpLib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHca</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DisableSpecificWarnings>4307;4530</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/IronMan.Core-DMANo1.dir/Release_Console//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NOMINMAX;NDEBUG;ZYCORE_STATIC_DEFINE;ZYDIS_STATIC_DEFINE;U_STATIC_IMPLEMENTATION;IRONMANCORE_EXPORTS;_USRDLL;ENABLE_CONSOLE;_DISABLE_VECTOR_ANNOTATION;PX_SUPPORT_PVD;CMAKE_INTDIR="Release_Console"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NOMINMAX;NDEBUG;ZYCORE_STATIC_DEFINE;ZYDIS_STATIC_DEFINE;U_STATIC_IMPLEMENTATION;IRONMANCORE_EXPORTS;_USRDLL;ENABLE_CONSOLE;_DISABLE_VECTOR_ANNOTATION;PX_SUPPORT_PVD;CMAKE_INTDIR=\"Release_Console\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\OpenSSL-Win64\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PxShared\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\characterkinematic;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\common;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\cooking;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\extensions;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\foundation;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\geometry;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pxtask;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pvd;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\HttpLib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\OpenSSL-Win64\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PxShared\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\characterkinematic;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\common;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\cooking;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\extensions;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\foundation;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\geometry;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pxtask;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pvd;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\HttpLib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Lib\vmm.lib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Lib\leechcore.lib;PhysX3_x64.lib;PhysX3Common_x64.lib;PhysX3Cooking_x64.lib;PhysX3Extensions.lib;PxFoundation_x64.lib;PxPvdSDK_x64.lib;PhysX3CharacterKinematic_x64.lib;PhysX3Vehicle.lib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\Zydis\lib\Zydis.lib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\Zycore\lib\Zycore.lib;libcrypto_static.lib;libssl_static.lib;OpenGL32.lib;Dbghelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zydis/lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zydis/lib/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zycore/lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zycore/lib/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Core/DMA/Lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Core/DMA/Lib/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/OpenSSL-Win64/lib/VC/x64/MT;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/OpenSSL-Win64/lib/VC/x64/MT/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/Lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /SETCHECKSUM</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <HeapCommitSize>COMMIT:16384</HeapCommitSize>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/Release_Console/IronMan.Core-DMANo1.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/bin/Release_Console/IronMan.Core-DMANo1.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\OpenSSL-Win64\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PxShared\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\characterkinematic;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\common;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\cooking;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\extensions;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\foundation;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\geometry;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pxtask;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pvd;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\HttpLib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /EHca</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DisableSpecificWarnings>4307;4530</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/IronMan.Core-DMANo1.dir/Release_Debug//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NOMINMAX;NDEBUG;ZYCORE_STATIC_DEFINE;ZYDIS_STATIC_DEFINE;U_STATIC_IMPLEMENTATION;IRONMANCORE_EXPORTS;_USRDLL;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;CMAKE_INTDIR="Release_Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NOMINMAX;NDEBUG;ZYCORE_STATIC_DEFINE;ZYDIS_STATIC_DEFINE;U_STATIC_IMPLEMENTATION;IRONMANCORE_EXPORTS;_USRDLL;_CRT_SECURE_NO_WARNINGS;_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;CMAKE_INTDIR=\"Release_Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\OpenSSL-Win64\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PxShared\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\characterkinematic;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\common;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\cooking;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\extensions;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\foundation;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\geometry;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pxtask;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pvd;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\HttpLib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\OpenSSL-Win64\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PxShared\include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\characterkinematic;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\common;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\cooking;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\extensions;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\foundation;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\geometry;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pxtask;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\PhysX_3.4\Include\pvd;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Include;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\HttpLib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Lib\vmm.lib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\Lib\leechcore.lib;PhysX3_x64.lib;PhysX3Common_x64.lib;PhysX3Cooking_x64.lib;PhysX3Extensions.lib;PxFoundation_x64.lib;PxPvdSDK_x64.lib;PhysX3CharacterKinematic_x64.lib;PhysX3Vehicle.lib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\Zydis\lib\Zydis.lib;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\Zycore\lib\Zycore.lib;libcrypto_static.lib;libssl_static.lib;OpenGL32.lib;Dbghelp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zydis/lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zydis/lib/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zycore/lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/ThirdParty/Zycore/lib/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Core/DMA/Lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Core/DMA/Lib/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/OpenSSL-Win64/lib/VC/x64/MT;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/OpenSSL-Win64/lib/VC/x64/MT/$(Configuration);D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/Lib;D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/Include/Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /SETCHECKSUM</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <HeapCommitSize>COMMIT:16384</HeapCommitSize>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/Release_Debug/IronMan.Core-DMANo1.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/bin/Release_Debug/IronMan.Core-DMANo1.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Cheat\Code\lib\CMake\bin\cmake.exe "-SD:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main" "-BD:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build" --check-stamp-file "D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\4.3.2\CMakeCXXCompiler.cmake;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\4.3.2\CMakeRCCompiler.cmake;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\4.3.2\CMakeSystem.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">Building Custom Rule D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">setlocal
+D:\Cheat\Code\lib\CMake\bin\cmake.exe "-SD:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main" "-BD:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build" --check-stamp-file "D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\4.3.2\CMakeCXXCompiler.cmake;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\4.3.2\CMakeRCCompiler.cmake;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\4.3.2\CMakeSystem.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">Building Custom Rule D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">setlocal
+D:\Cheat\Code\lib\CMake\bin\cmake.exe "-SD:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main" "-BD:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build" --check-stamp-file "D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\4.3.2\CMakeCXXCompiler.cmake;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\4.3.2\CMakeRCCompiler.cmake;D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\4.3.2\CMakeSystem.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeCXXInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeCommonLanguageInclude.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeGenericSystem.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeInitializeConfigs.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeLanguageInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeRCInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Compiler\MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Compiler\MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Linker\MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Linker\MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows-Initialize.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows-MSVC.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\Windows.cmake;D:\Cheat\Code\lib\CMake\share\cmake-4.3\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\IronMan.Core-DMANo1.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/IronMan.Core-DMANo1.dir/Release//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/IronMan.Core-DMANo1.dir/Release_Console//cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/IronMan.Core-DMANo1.dir/Release_Debug//cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\WinHeaders.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Main.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\allocMem.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\HijackExport.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Core.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Auth.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Config.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DriverControl.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\FilePak.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\HandWeaponManager.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\ItemManager.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Menu.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\PatternLoader.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SkinWeaponManager.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\VehicleManager.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Visuals.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DirectX\DirectX11.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DirectX\Drawing.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DirectX\Imgui_dx11.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DirectX\Imgui_win32.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\DMAHandler.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Imgui\imgui.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Imgui\imgui_draw.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Imgui\imgui_widgets.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Math\Math.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\MouseController\KMBOX\KmboxNet.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\PhysicsManager\PhysicsManager.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\SDK.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\ObjectManager.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\ObjectsStore.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\UEncrypt.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\UnrealNames.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\CoreUObject\Class.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\CoreUObject\Object.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis\AnalysisBase.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis\DecryptAnalysis.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis\UObjectAnalysis.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm\AsmHelper64.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\Console.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\InitOnce.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\JsonHelper.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\ThreadMutex.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\Utils.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\ZydisWrapper.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\assembler.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\codegen.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\compiler.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\constpool.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\containers.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\context.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\cpuinfo.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\cputicks.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\error.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\globals.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\intutil.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\logger.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\operand.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\runtime.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\string.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\vmem.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\zone.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86assembler.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86compiler.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86context.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86cpuinfo.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86inst.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86operand.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86operand_regs.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86scheduler.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Console|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Console/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release_Debug|x64'">D:/Cheat/Code/PUBG PAOD/PAOD-PUBG-DMA-Source-Code-main/build/CMakeFiles/IronMan.Core-DMANo1.dir/Release_Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\IronMan.Core-DMANo1.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\IronMan.Core-DMANo1.dir\Release_Console\cmake_pch.hxx" />
+    <ClInclude Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\IronMan.Core-DMANo1.dir\Release_Debug\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\ZERO_CHECK.vcxproj">
+      <Project>{92F664BE-217C-33FC-A267-8E7704AC31E1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

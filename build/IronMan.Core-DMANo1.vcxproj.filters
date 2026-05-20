@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\IronMan.Core-DMANo1.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Include\WinHeaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\allocMem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\HijackExport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Auth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DriverControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\FilePak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\HandWeaponManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\ItemManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\PatternLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SkinWeaponManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\VehicleManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Visuals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DirectX\DirectX11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DirectX\Drawing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DirectX\Imgui_dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DirectX\Imgui_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\DMA\DMAHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\Math\Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\MouseController\KMBOX\KmboxNet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\PhysicsManager\PhysicsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\SDK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\ObjectManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\ObjectsStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\UEncrypt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\UnrealNames.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\CoreUObject\Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Core\SDK\CoreUObject\Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis\AnalysisBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis\DecryptAnalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Analysis\UObjectAnalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Asm\AsmHelper64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\Console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\InitOnce.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\JsonHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\ThreadMutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\Helper\Misc\ZydisWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\assembler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\codegen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\compiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\constpool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\containers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\cpuinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\cputicks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\intutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\operand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\runtime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\vmem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\base\zone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86assembler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86compiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86cpuinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86inst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86operand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86operand_regs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\ThirdParty\AsmJit\x86\x86scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\IronMan.Core-DMANo1.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\IronMan.Core-DMANo1.dir\Release_Console\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\build\CMakeFiles\IronMan.Core-DMANo1.dir\Release_Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Cheat\Code\PUBG PAOD\PAOD-PUBG-DMA-Source-Code-main\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{6D2B99CE-7111-36E2-9054-86C35A13334F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{743AD5E2-FD6A-3CDE-BED5-922C49D4516A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
